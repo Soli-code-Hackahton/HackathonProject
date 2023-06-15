@@ -1,6 +1,7 @@
 const services = require("../models/services");
 const sendEmail = require("../notify/email");
 const sendSms = require("../notify/sms");
+// const redis = require("../lib/redis");
 
 // Create a new service
 exports.createService = async (req, res) => {
@@ -18,6 +19,8 @@ exports.createService = async (req, res) => {
     const savedService = await newService.save();
 
     sendSms("anas.zenagui@etu.uae.ac.ma", "Hello Anas, Hackathon!");
+
+    // redis.set("service", newService);
 
     res.status(201).json(savedService);
   } catch (error) {
