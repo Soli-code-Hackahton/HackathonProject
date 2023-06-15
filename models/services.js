@@ -14,16 +14,16 @@ const ServicesSchema = new Schema({
   category: {
     type: String,
   },
-  agencyId: {
-    type: Schema.Types.ObjectId,
-    ref: "agencies",
-  },
-  services: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "services",
-    },
-  ],
+  // agencyId: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: "agencies",
+  // },
+  // services: [
+  //   {
+  //     type: Schema.Types.ObjectId,
+  //     ref: "services",
+  //   },
+  // ],
 });
 
 module.exports = mongoose.model("services", ServicesSchema);
