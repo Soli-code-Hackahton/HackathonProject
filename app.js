@@ -5,9 +5,11 @@ const morgan = require("morgan");
 const coockieParser = require("cookie-parser");
 const usersRouter = require("./routes/users.js");
 const trackingRouter = require("./routes/trackings.js");
+const transactionRouter = require("./routes/transactions.js");
 const cors = require("cors");
 const establishConnection = require("./lib/db.js");
 const Agenda = require("agenda");
+const transactions = require("./routes/transactions");
 //!establishing connection with mongodb database
 establishConnection();
 //! process.env will have all the variables listed in the .env file
@@ -27,6 +29,7 @@ app.use(coockieParser());
 const apiPrefix = "/api/v1/";
 app.use(apiPrefix + "users/", usersRouter);
 app.use(apiPrefix + "tracking/", trackingRouter);
+app.use(apiPrefix + "transactions/", transactionRouter);
 
 // not found
 
