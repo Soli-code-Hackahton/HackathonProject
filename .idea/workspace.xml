@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2aea28e-deb7-44da-9379-b30bf7f05ecb" name="Changes" comment="add trackings">
-      <change afterPath="$PROJECT_DIR$/routes/transactions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/transactions.js" afterDir="false" />
-    </list>
+    <list default="true" id="f2aea28e-deb7-44da-9379-b30bf7f05ecb" name="Changes" comment="add transactions.js" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +68,7 @@
       <updated>1686831542392</updated>
       <workItem from="1686831543959" duration="775000" />
       <workItem from="1686832333422" duration="11074000" />
-      <workItem from="1686843476827" duration="1093000" />
+      <workItem from="1686843476827" duration="1255000" />
     </task>
     <task id="LOCAL-00001" summary="add tracking stuffs">
       <created>1686836878196</created>
@@ -103,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686841349026</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add transactions.js">
+      <created>1686847108278</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686847108278</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +117,7 @@
     <MESSAGE value="add sms/email" />
     <MESSAGE value="add payment" />
     <MESSAGE value="add trackings" />
-    <option name="LAST_COMMIT_MESSAGE" value="add trackings" />
+    <MESSAGE value="add transactions.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add transactions.js" />
   </component>
 </project>
