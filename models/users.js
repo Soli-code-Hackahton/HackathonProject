@@ -2,11 +2,12 @@ const mongoose = require("mongoose");
 const crypto = require("crypto");
 const validator = require("validator");
 const bcrypt = require("bcryptjs");
+const Schema = mongoose.Schema;
+
 
 const UsersSchema = new mongoose.Schema({
   name: {
     type: String,
-    // required: [true, "User must have a name!"],
   },
   email: {
     type: String,
@@ -14,15 +15,6 @@ const UsersSchema = new mongoose.Schema({
     unique: [true, "Email already in use"],
     lowercase: true,
     validate: [validator.isEmail, "Please provide a valide email!"],
-    // trim: true
-  },
-  role: {
-    type: String,
-    enum: ["user", "admin"],
-    default: "user",
-  },
-  username: {
-    type: String,
   },
   password: {
     type: String,
@@ -40,6 +32,10 @@ const UsersSchema = new mongoose.Schema({
       },
       message: "Passwords Are Not The Same!",
     },
+  },
+  agencyId: {
+    type: Schema.Types.ObjectId,
+    ref: "agencies",
   },
 });
 
