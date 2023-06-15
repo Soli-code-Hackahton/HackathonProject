@@ -1,4 +1,4 @@
-const { json } = require("express");
+const {json} = require("express");
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
@@ -32,24 +32,24 @@ app.use(apiPrefix + "tracking/", trackingRouter);
 
 //! listening
 app.listen(process.env.PORT, () => {
-  console.log("listening in port ", process.env.PORT || 8080);
+    console.log("listening in port ", process.env.PORT || 8080);
 });
-
-
 
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.CLUSTER_USERNAME}/findit?retryWrites=true&w=majority`;
 
 
 const agenda = new Agenda({db: {address: uri}});
-agenda.define("send monthly billing report", async (job) => {
-    console.log("sending monthly billing report", job);
+agenda.define("send daily billing warning", async (job) => {
+    console.log("sending daily billing warning");
+    const {sendEmail} = require("./EmailSchedule/EmailSchedule");
+    await sendEmail();
 });
 
 (async function () {
     // IIFE to give access to async/await
     await agenda.start();
 
-    await agenda.every("1 day", "send monthly billing report");
-    await agenda.now("test", "hello mom ");
+    await agenda.every("1 day", "send daily billing warning");
+
 })();

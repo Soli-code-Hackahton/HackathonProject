@@ -19,9 +19,9 @@ const TrackingSchema = new mongoose.Schema({
     }
 })
 
-const Tracking = mongoose.model("Tracking", TrackingSchema);
+const Trackings = mongoose.model("Trackings", TrackingSchema);
 
 
 
 
-module.exports = Tracking;
+module.exports = Trackings;

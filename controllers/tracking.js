@@ -1,4 +1,4 @@
-const Tracking = require("../models/tracking");
+const Tracking = require("../models/trackings");
 
 exports.createTracks = async (req, res) => {
     const {title, description} = req.body;

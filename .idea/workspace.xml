@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2aea28e-deb7-44da-9379-b30bf7f05ecb" name="Changes" comment="add sms/email">
-      <change afterPath="$PROJECT_DIR$/services/generate_instant_payment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/generate_subscription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="f2aea28e-deb7-44da-9379-b30bf7f05ecb" name="Changes" comment="add payment">
+      <change beforePath="$PROJECT_DIR$/EmailSchedule/EmailSchedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/EmailSchedule/EmailSchedule.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686831542392</updated>
       <workItem from="1686831543959" duration="775000" />
-      <workItem from="1686832333422" duration="7792000" />
+      <workItem from="1686832333422" duration="8186000" />
     </task>
     <task id="LOCAL-00001" summary="add tracking stuffs">
       <created>1686836878196</created>
@@ -89,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686838527009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add payment">
+      <created>1686840219986</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686840219986</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +102,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add tracking stuffs" />
     <MESSAGE value="add sms/email" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sms/email" />
+    <MESSAGE value="add payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add payment" />
   </component>
 </project>
